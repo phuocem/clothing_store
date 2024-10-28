@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="information">
+    <div class="product-sets">
+      @for(item of this.product; track $index) {
+        <div class="product-set">
+          <div class="product-set-image">
+            <img src="{{item.image}}" alt="sản phẩm">
+          </div>
+          <div class="product-set-info">
+            <h2>{{item.name}}</h2>
+            <p>{{item.price}} VND</p>
+            <button (click)="viewcard">Xem chi tiết</button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
