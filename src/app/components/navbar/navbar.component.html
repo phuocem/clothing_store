@@ -1,32 +1,39 @@
-<nav class="navbar">
-  <div class="navbar-logo">
-    <a href="">PHƯỚCEM</a>
-  </div>
-
-  <ul class="navbar-menu">
-    <li> <a href="">Home</a></li>
-    <li><a href="">Shop</a></li>
-    <li><a href="">New Arrivals</a></li>
-    <li><a href="">Sale</a></li>
-    <li><a href="">Contact</a></li>
-    <li><a href="/product">Product</a></li>
-    <li><a href="/cart">Cart</a></li>
-  </ul>
-
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <input type="text" placeholder="Search for products..." />
-    <button type="submit"><i class="fas fa-search"></i> FIND</button>
-  </div>
-
-  <div class="navbar-icons">
-    <!-- Account Balance -->
-    <span class="balance">Balance: $100</span>
-    <!-- My Account -->
-    <div class="account-info">
-      <img  (click)="activateRightPanel()" src="assets/img/accout.png">
+<nav>
+  <div class="navbar">
+    <div class="container nav-container">
+      <input class="checkbox" type="checkbox" name="" id="" />
+      <div class="overlay"></div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="logo">
+        <h1>PHƯỚCEM</h1>
+      </div>
+      <div class="menu-items">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Sale</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="/product">Product</a></li>
+        <li><a href="/cart">Cart</a></li>
+      </div>
     </div>
-    <!-- Cart Icon -->
-    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products..." />
+      <button type="submit"><i class="fas fa-search"></i> FIND</button>
+    </div>
+    <div class="user">
+      <div class="balance">
+        <span >Balance: $100</span>
+      </div>
+
+      <div class="account-info">
+        <img (click)="activateRightPanel()" src="assets/img/accout.png">
+      </div>
+    </div>
+
   </div>
 </nav>
